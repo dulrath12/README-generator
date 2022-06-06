@@ -14,8 +14,8 @@ function renderLicenseBadge(data) {
   }
 }
 
-//TODO: Create a function that returns the license link
-//If there is no license, return an empty string
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
 function renderLicenseLink(data) {
   if (data.license === 'Apache'){
     return 'https://choosealicense.com/licenses/apache-2.0/'
@@ -32,12 +32,12 @@ function renderLicenseLink(data) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection() 
+function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-${renderLicenseBadge(data)}
+  ${renderLicenseBadge(data)}
 
 ### ${data.title}
 
