@@ -23,17 +23,17 @@ const questions = () => {
         {
             type: 'input',
             name: 'username',
-            message: 'Please enter your Github username'
+            message: 'Please enter your Github username:'
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Please enter your email address.'
+            message: 'Please enter your email address:'
         },
         {
             type: 'input',
             name: 'description',
-            message: 'Please enter a Description for your project.'
+            message: 'Please enter a Description for your project:'
         },
         {
             type: 'input',
@@ -43,22 +43,22 @@ const questions = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide instructions and examples for use.'
+            message: 'Provide instructions and examples for use:'
         },
         {
             type: 'input',
             name: 'contributing',
-            message: 'Please enter the guidelines you would like to set for others to contribute to this project.'
+            message: 'Please enter the guidelines you would like to set for others to contribute to this project:'
         },
         {
             type: 'input',
             name: 'collaborators',
-            message: 'List any collaborators you might have had or used for this project'
+            message: 'List any collaborators you might have had or used for this project:'
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Please provide any intructions that pertain to testing.'
+            message: 'Please provide any intructions that pertain to testing:'
         },
         {
             type: 'list',
@@ -81,7 +81,7 @@ function init() {
         fs.writeFile('./README.md', pageREADME, err => {
             if (err) throw err
 
-            console.log('tis be done')
+            console.log('Your README has been generated. Please open the README.md file to see it.')
         })
     
 })}
