@@ -16,7 +16,6 @@ function generateMarkdown(data) {
 ### ${data.title}
 
 ## Description
-
 ${data.descrtiption}
 
 ## Table of Contents
@@ -41,13 +40,14 @@ ${data.contributing}
 ${data.collaborators}
 
 ## Tests
+${data.tests}
 
 ## Questions
-Github Repo: github.com/
+Github Repo: github.com/${data.username}
 
 For any additional questions, or comments, or to speak to me about the project, please reach out to me at the email listed below.
 
-EMAIL:
+EMAIL:${data.email}
 
 ## License
 
