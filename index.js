@@ -21,24 +21,9 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'motivation',
-            message: 'What was your motivation for this project?'
-        },
-        {
-            type: 'input',
-            name: 'why',
-            message: 'Why did you build this project?'
-        },
-        {
-            type: 'input',
-            name: 'what',
-            message: 'What problem does it solve / What does it do?'
-        },
-        {
-            type: 'input',
-            name: 'learn',
-            message: 'What did you learn while making this project?'
-        },
+            name: 'description',
+            message: 'Please enter a Description for your project.'
+        }
         {
             type: 'input',
             name: 'installation',
@@ -51,13 +36,23 @@ const questions = () => {
         },
         {
             type: 'input',
+            name: 'contributing',
+            message: 'Please enter the guidelines you would like to set for others to contribute to this project.'
+        },
+        {
+            type: 'input',
             name: 'collaborators',
             message: 'List any collaborators you might have had or used for this project'
         },
         {
-            type: 'checkbox',
+            type: 'input',
+            name: 'tests',
+            message: 'Please provide any intructions that pertain to testing.'
+        },
+        {
+            type: 'list',
             name: 'license',
-            message: 'Please choose the licenses you would like to include:',
+            message: 'Please choose the license you would like to include:',
             choices: ['Community License', 'MIT License', 'GNU GPLv3']
         }
     ])
