@@ -63,7 +63,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Please choose the license you would like to include:',
-            choices: ['Community License', 'MIT License', 'GNU GPLv3']
+            choices: ['Apache', 'MIT', 'GNU-GPLv3', 'ISC']
         }
     ])
 };
@@ -79,7 +79,6 @@ function init() {
     questions()
     .then(data => {
         const pageREADME = generateMarkdown(data)
-
         fs.writeFile('./README.md', pageREADME, err => {
             if (err) throw err
 
