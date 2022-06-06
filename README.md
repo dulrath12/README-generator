@@ -1,7 +1,7 @@
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-### Professional README Generator
+# Professional README Generator
 
 ## Description
 This project is a Professional README generator that was created using node.js. This project was designed to be used to make quick and efficient professional README's using only the command bar by entering a variety of questions. To create this project I used Node.js, along with the node module inquirer to be able to ask questions and recieve/utilize feedback. I struggled a little bit at first with getting to and accessing the data from the inquirer prompts, but once that was figured out it was pretty much smooth sailing. 
